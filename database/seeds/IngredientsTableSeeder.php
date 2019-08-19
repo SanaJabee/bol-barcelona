@@ -24,7 +24,7 @@ class IngredientsTableSeeder extends Seeder
     protected $filename;
     public function __construct(){
 
-        $this->table = 'Ingredients';
+        $this->table = 'ingredients';
         $this->filename = base_path('database/csv/ingredients.csv');
 
     }
