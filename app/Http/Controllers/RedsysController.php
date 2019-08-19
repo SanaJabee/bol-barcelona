@@ -32,9 +32,9 @@ class RedsysController extends Controller
             Redsys::setTransactiontype('0');
             Redsys::setTerminal('1');
             Redsys::setMethod('T'); //Solo pago con tarjeta, no mostramos iupay
-            Redsys::setNotification('http://localhost:8000/notify'); //Url de notificacion
-            Redsys::setUrlOk('http://localhost:8000/tpv_ok/'.$Username.'/'.$email.'/'.$phone.'/'.$pickupTime); //Url OK
-            Redsys::setUrlKo('http://localhost:8000/tpv_ko'); //Url KO
+            Redsys::setNotification('http://206.81.19.127/notify'); //Url de notificacion
+            Redsys::setUrlOk('http://206.81.19.127/tpv_ok/'.$Username.'/'.$email.'/'.$phone.'/'.$pickupTime); //Url OK
+            Redsys::setUrlKo('http://206.81.19.127/tpv_ko'); //Url KO
             Redsys::setVersion('HMAC_SHA256_V1');
             Redsys::setTradeName('Bol Barcelona');
             Redsys::setTitular('Sylvain Cazali');
