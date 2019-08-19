@@ -26,8 +26,8 @@ class RedsysController extends Controller
             $key = 'sq7HjrUOBfKmC576ILgskD5srU870gJ7';
             Redsys::setAmount($_POST['amount']);
             Redsys::setOrder(time());
-            Redsys::setMerchantcode('348605437'); //Reemplazar por el código que proporciona el banco
-            // Redsys::setMerchantcode('999008881'); //Reemplazar por el código que proporciona el banco Test
+            // Redsys::setMerchantcode('348605437'); //Reemplazar por el código que proporciona el banco
+            Redsys::setMerchantcode('999008881'); //Reemplazar por el código que proporciona el banco Test
             Redsys::setCurrency('978');
             Redsys::setTransactiontype('0');
             Redsys::setTerminal('1');
