@@ -11,7 +11,7 @@ class IngredientsSeeder extends Seeder
      */
     public function run()
     {
-        \Illuminate\Support\Facades\DB::table('ingredients')->insert([
+        \Illuminate\Support\Facades\DB::table('ingredient')->insert([
             'name' => str_random(10),
             'email' => str_random(10) . '@gmail.com',
             'password' => bcrypt('secret'),

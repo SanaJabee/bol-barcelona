@@ -13,7 +13,7 @@ class CreateIngredientsTable extends Migration
      */
     public function up()
     {
-        Schema::create('ingredients', function (Blueprint $table) {
+        Schema::create('ingredient', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->decimal('price', 8, 2);
@@ -31,7 +31,7 @@ class CreateIngredientsTable extends Migration
     public function down()
     {
         Schema::disableForeignKeyConstraints();
-        Schema::dropIfExists('ingredients');
+        Schema::dropIfExists('ingredient');
         Schema::enableForeignKeyConstraints();
     }
 }
