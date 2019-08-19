@@ -81,16 +81,3 @@
 @section('css')
 <link rel="stylesheet" href="/css/admin_custom.css">
 @stop
-
-@section('js')
-<script>
-    $(document).ready(function() {
-        $('.data-table').dataTable({
-            "order": [
-                [3, "desc"]
-            ],
-
-        });
-    });
-</script>
-@stop
